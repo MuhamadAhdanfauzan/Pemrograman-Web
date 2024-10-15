@@ -1,1 +1,1 @@
-- Preview Website Modul 1 Praktikum 2 : https://muhamadahdanfauzan.github.io/Pemrograman-Web/Codelab/Codelab1/
+- Preview Website Modul 2 Codelab1 : https://muhamadahdanfauzan.github.io/Pemrograman-Web/Codelab/Codelab1/
