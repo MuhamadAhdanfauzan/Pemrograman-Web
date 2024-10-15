@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    
+    background-image: url('Assets/neonBG.jpg'); /* Ganti dengan link gambar dari Imgur */
+    background-size: cover; /* Agar gambar menutupi seluruh layar */
+    background-position: center; /* Memposisikan gambar di tengah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    background-color: #0946e0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+label {
+    color: white;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input{
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Memungkinkan textarea untuk diubah ukurannya secara vertikal */
+    min-height: 100px; /* Mengatur tinggi minimum */
+    overflow-y: auto; /* Menampilkan scroll jika teks melebihi ukuran */
+}
+
+
+button {
+  background-color: #4CAF50; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  padding: 15px 32px; /* Padding dan ukuran */
+  text-align: center; /* Penataan teks */
+  text-decoration: none; /* Dekorasi teks */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; /* Cursor saat mouse diatas button */
+  width: 98%;
+
+}
+button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
