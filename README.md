@@ -1,1 +1,2 @@
 - Preview Website Modul 1 Praktikum 2 : https://muhamadahdanfauzan.github.io/Pemrograman-Web/Travel.Tu/
+- Link Figma : https://www.figma.com/design/QFn35ZO92I15EbxFODmrxL/Demo1-Pemrograman-Web?node-id=0-1&node-type=canvas&t=QALaQVM2IO1mPqT1-0
