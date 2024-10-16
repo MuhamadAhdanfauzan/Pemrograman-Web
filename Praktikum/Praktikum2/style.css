@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2C2A4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-header {
+    display: flex;
+    align-items: center;
+}
+
+.todo-header h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.todo-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.input-container {
+    margin-top: 15px;
+    display: flex;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#add-btn {
+    background-color: #FF5C5C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background-color: #FF3333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Menjaga tombol delete tetap di sebelah kanan */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Mencegah overflow dari kotak */
+}
+
+.task-label {
+    flex: 1; /* Supaya label mengambil ruang yang tersisa */
+    margin-right: 10px; /* Tambah jarak antara label dan tombol delete */
+    word-wrap: break-word; /* Teks panjang turun ke baris berikutnya */
+    overflow: hidden; /* Pastikan overflow disembunyikan */
+    text-overflow: ellipsis; /* Menampilkan elipsis jika teks terlalu panjang */
+    font-size: 12px; /* Atur ukuran teks untuk label tugas */
+}
+
+.edit-input {
+    flex: 1; /* Supaya input edit mengambil ruang yang tersisa */
+    margin-right: 10px; /* Tambah jarak antara input dan tombol delete */
+    display: none; /* Sembunyikan input edit awalnya */
+    font-size: 14px; /* Atur ukuran teks untuk input edit */
+}
+
+.edit-btn, .delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #FF5C5C;
+    font-size: 14px; /* Atur ukuran teks untuk tombol edit dan delete */
+    cursor: pointer;
+    margin-left: 10px; /* Jarak antara tombol dan label/input */
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    color: #FF3333;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    flex-shrink: 0; /* Checkbox tidak mengecil */
+}
+
+/* Styles for action container */
+.action-container {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-top: 10px; /* Add some space above the action container */
+}
+
+.action-container label {
+    font-size: 13px; /* Adjust the size as needed */
+    margin-right: 10px; /* Add some space between the label and the button */
+}
+
+#delete-selected-btn {
+    background-color: #FF5C5C;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+
+    margin-left: 10px; /* Add space between checkbox/label and delete button */
+}

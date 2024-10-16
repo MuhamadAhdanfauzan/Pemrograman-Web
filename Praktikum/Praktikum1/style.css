@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #ffafbd, #ffc3a0);
+}
+
+.calculator {
+    width: 280px;
+    max-width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, rgba(255, 175, 189, 0.9), rgba(255, 195, 160, 0.9));
+}
+
+.display {
+    background: transparent;
+    color: white;
+    padding: 20px; /* Increased padding for better spacing */
+    font-size: 25px; /* Larger font for better readability */
+    text-align: right;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    min-height: 80px; /* Ensure there's enough space for the display */
+}
+
+#operation {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+#result {
+    font-size: 2.2em; /* Consistent font size with the display */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 15px;
+}
+
+/* Tombol umum */
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    backdrop-filter: blur(10px);
+    position: relative; /* Added for z-index adjustment */
+    z-index: 1; /* Ensure buttons are above the backdrop */
+}
+
+/* Efek aktif (pressed) */
+button:active {
+    transform: scale(0.95);
+    z-index: 2; /* Bring the button above the backdrop when pressed */
+}
+
+/* Warna untuk tombol fungsi khusus */
+button.clear,
+button.delete {
+    background: rgba(255, 87, 87, 0.9);
+}
+
+button.clear:hover,
+button.delete:hover {
+    background: rgba(255, 87, 87, 1);
+}
+
+button.clear:active,
+button.delete:active {
+    background: rgba(200, 40, 40, 1);
+}
+
+/* Warna untuk tombol angka */
+button.number {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+button.number:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+button.number:active {
+    background: rgba(200, 200, 200, 0.4);
+}
+
+/* Warna untuk tombol operator */
+button.operator {
+    background: rgba(146, 134, 234, 0.9);
+}
+
+button.operator:hover {
+    background: rgba(146, 134, 234, 1);
+}
+
+button.operator:active {
+    background: rgba(100, 80, 200, 1);
+}
+
+/* Warna untuk tombol sama dengan */
+button.equals {
+    background: rgba(87, 206, 255, 0.9);
+    grid-row: span 2;
+    height: calc(2 * 60px + 8px);
+}
+
+button.equals:hover {
+    background: rgba(87, 206, 255, 1);
+}
+
+button.equals:active {
+    background: rgba(60, 160, 220, 1);
+}
+
+/* Media query untuk responsivitas */
+@media (max-width: 600px) {
+    .calculator {
+        width: 90%;
+    }
+
+    .display {
+        font-size: 1.6em; /* Adjusted for medium screens */
+        padding: 15px; /* Adjusted padding */
+    }
+
+    button {
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    button.equals {
+        height: calc(2 * 50px + 8px);
+    }
+}
+
+@media (max-width: 400px) {
+    .display {
+        font-size: 1.4em; /* Further adjusted for smaller screens */
+        padding: 10px; /* Reduced padding */
+    }
+
+    button {
+        height: 45px;
+        font-size: 1em;
+    }
+
+    button.equals {
+        height: calc(2 * 45px + 8px);
+    }
+}
