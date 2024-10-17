@@ -1,1 +1,1 @@
-- Preview Kalkulator responsive Modul 2 Praktikum 2 : https://muhamadahdanfauzan.github.io/Pemrograman-Web/Praktikum/Praktikum2/
+- Preview to do list responsive Modul 2 Praktikum 2 : https://muhamadahdanfauzan.github.io/Pemrograman-Web/Praktikum/Praktikum2/
