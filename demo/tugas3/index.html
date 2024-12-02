@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Ahdan | FruitBag</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><a href="#">FruitBag</a></div>
+      <ul class="nav__links">
+        <li class="link">Home</li>
+        <li class="link">Blog</li>
+        <li class="link">Offers</li>
+        <li class="link">Services</li>
+        <li class="link">Contacts</li>
+      </ul>
+    </nav>
+    <header>
+      <div class="section__container">
+        <div class="header__content">
+          <h1>FruitBag</h1>
+          <p>
+            Jelajahi Kesegaran Buah-Buahan Terbaik di Toko Kami!
+            Temukan berbagai pilihan buah segar dan berkualitas
+            yang dipetik langsung dari kebun.
+          </p>
+          <button>Read more</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Form untuk CRUD -->
+    <section class="crud__container">
+      <div class="section__container">
+        <h2 class="section__title">Manage Products</h2>
+        <form id="product-form">
+          <input type="hidden" id="product-id" />
+          <input type="text" id="product-name" placeholder="Product Name" required />
+          <input type="text" id="product-image" placeholder="Image Path (e.g., mango.jpg)" />
+          <input type="number" id="product-price" placeholder="Price" required />
+          <button type="submit" id="save-button">Add Product</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Tabel produk -->
+    <section class="journey__container">
+      <div class="section__container">
+        <h2 class="section__title">Product List</h2>
+        <table id="product-table">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Image</th>
+              <th>Price</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Produk akan dimuat di sini -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container">
+        <h4>FruitBag</h4>
+        <p>
+          FruitBag adalah tempat untuk belanja produk buah - buahan menjadi simple.
+        </p>
+        <p>Copyright &copy; 2024 Designed by Ahdan</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
